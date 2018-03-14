@@ -11,4 +11,4 @@ By also loading the fonts.css file asynchronous, the content is shown even soone
 ![](screenshots/before.png)
 
 **AFTER**
-![](screenshots/after001.png)
+![](screenshots/after001.png = 100x)
