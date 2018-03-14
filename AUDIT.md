@@ -27,3 +27,14 @@ You can find the changes in the **minify** branch.
 
 **AFTER**\
 <img src="screenshots/after002.png" width="50%">
+
+### 3. Compressing image files
+By compressing the image files I was able to make the biggest change in loading speed. The overall speed got reduced by 7 seconds. To compress the image files I used [](https://tinypng.com/).
+
+You can find the changes in the **compress-images** branch.
+
+**BEFORE**\
+<img src="screenshots/after002.png" width="50%">
+
+**AFTER**\
+<img src="screenshots/after003.png" width="50%">
