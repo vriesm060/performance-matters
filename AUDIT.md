@@ -22,8 +22,8 @@ By doing this I was able to reduce the loading time by 2 seconds and make the co
 
 You can find the changes in the **minify** branch.
 
-**BEFORE**
-![](screenshots/before.png)
+**BEFORE**\
+<img src="screenshots/after001.png" width="50%">
 
 **AFTER**\
 <img src="screenshots/after002.png" width="50%">
