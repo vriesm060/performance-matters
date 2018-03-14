@@ -14,3 +14,16 @@ You can find the changes in the **async-loading** branch.
 
 **AFTER**\
 <img src="screenshots/after001.png" width="50%">
+
+### 2. Minify CSS and JS
+In order to reduce more loading time I minified the CSS and JS files. I used [](https://csscompressor.com/) to minify the CSS files and I used [](https://jscompress.com/) to minify the JS files.
+
+By doing this I was able to reduce the loading time by 2 seconds and make the content appear 1 second earlier.
+
+You can find the changes in the **minify** branch.
+
+**BEFORE**
+![](screenshots/before.png)
+
+**AFTER**\
+<img src="screenshots/after002.png" width="50%">
