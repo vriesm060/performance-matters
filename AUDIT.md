@@ -1,29 +1,39 @@
 # Bootstrap Documentation Site Performance
 
+[Go back to master](../master/AUDIT.md)
+
+## Setup
+
+All the audits where done on a Fast 3G internet connection, which was good enough to check the performance on. These were the original stats:
+
+| First meaningful paint | First interactive | Score  |
+| ---------------------- | ----------------- | ------ |
+| 5.420 seconds          | 5.420 seconds	   | 64/100 |
+
+**Original waterfall:**
+![Original waterfall](screenshots/original.png)
+
+**Original audit:**
+![Original audit](screenshots/audit-original.png)
+
 ## Improvements
 
-### 1. Loading Scripts and fonts.css async
-By loading all the scripts asynchronous they load at the same time and don't have to wait on one another. This increases the loading speed by 1 second, but it shows the content 2 seconds earlier, which is more important.
+### Minify CSS and JS
+---
 
-By also loading the fonts.css file asynchronous, the content is shown even sooner. It now shows the content 5 seconds earlier than in the original way.
+In order to reduce more loading time I minified the CSS and JS files. I used [CSS Compressor](https://csscompressor.com/) to minify the CSS files and I used [JS Compress](https://jscompress.com/) to minify the JS files.
 
-You can find the changes in the **async-loading** branch.
+By doing this I was able to reduce the loading time by half a second and make the content appear half a second earlier as well.
 
-**BEFORE**
-![](screenshots/before.png)
+These are the new stats:
 
-**AFTER**\
-<img src="screenshots/after001.png" width="50%">
+| First meaningful paint | First interactive  | Score  |
+| ---------------------- | ------------------ | ------ |
+| 4.940 seconds          | 4.940 seconds	    | 69/100 |
+| **-0.480 seconds**     | **-0.480 seconds** | **+5** |
 
-### 2. Minify CSS and JS
-In order to reduce more loading time I minified the CSS and JS files. I used [](https://csscompressor.com/) to minify the CSS files and I used [](https://jscompress.com/) to minify the JS files.
+**Waterfall after minify:**
+![Waterfall after minify](screenshots/after-minify.png)
 
-By doing this I was able to reduce the loading time by 2 seconds and make the content appear 1 second earlier.
-
-You can find the changes in the **minify** branch.
-
-**BEFORE**\
-<img src="screenshots/after001.png" width="50%">
-
-**AFTER**\
-<img src="screenshots/after002.png" width="50%">
+**Audit after minify:**
+![Audit after minify](screenshots/audit-after-minify.png)
