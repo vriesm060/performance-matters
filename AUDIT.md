@@ -6,6 +6,10 @@
 
 <!-- Add setup -->
 
+| First meaningful paint | First interactive  | Score  |
+| ---------------------- | ------------------ | ------ |
+| 2.400 seconds          | 24.670 seconds     | 43/100 |
+
 ## Improvements
 
 ### 1. Loading Scripts and fonts.css async
@@ -15,7 +19,14 @@ By loading all the scripts asynchronous they load at the same time and don't hav
 
 By also loading the fonts.css file asynchronous, the content is shown even sooner. It now shows the content 5 seconds earlier than in the original way.
 
-You can find the changes in the [async-loading](https://github.com/vriesm060/performance-matters/blob/async-loading/AUDIT.md) branch.
+You can find the changes in the [async-loading](/blob/async-loading/AUDIT.md) branch.
+
+<!--
+| First meaningful paint | First interactive  | Score  |
+| ---------------------- | ------------------ | ------ |
+| 2.400 seconds          | 24.670 seconds     | 43/100 |
+| **-0.310 seconds**     | **-0.010 seconds** | **+2** |
+-->
 
 **BEFORE**
 ![](screenshots/before.png)
