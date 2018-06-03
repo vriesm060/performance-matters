@@ -1,10 +1,10 @@
 # Bootstrap Documentation Site Performance
 
-<!-- Add intro -->
+<!-- !! ADD INTRO !! -->
 
 ## Setup
 
-<!-- Add setup -->
+All the audits where done on a Fast 3G internet connection, which was good enough to check the performance on. These were the original stats:
 
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
@@ -21,11 +21,11 @@
 ### 1. Loading Scripts and fonts.css async
 ---
 
-By loading all the scripts asynchronous they load at the same time and don't have to wait on one another. This increases the loading speed by 1 second, but it shows the content 2 seconds earlier, which is more important.
+By loading all the scripts asynchronous they load at the same time and don't have to wait on one another. This increases the loading speed by about 1 second, but it shows the content 2 seconds earlier, which is more important.
 
-By also loading the fonts.css file asynchronous, the content is shown even sooner. It now shows the content 5 seconds earlier than in the original way.
+By also loading the fonts.css file asynchronous, the content is shown even sooner. It now shows the content 3 seconds earlier than in the original way.
 
-You can find the changes in the [async-loading](../async-loading/AUDIT.md) branch.
+You can find the changes in the [async-loading](../async-loading/AUDIT.md) branch. These are the new stats:
 
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
@@ -43,9 +43,9 @@ You can find the changes in the [async-loading](../async-loading/AUDIT.md) branc
 
 In order to reduce more loading time I minified the CSS and JS files. I used [CSS Compressor](https://csscompressor.com/) to minify the CSS files and I used [JS Compress](https://jscompress.com/) to minify the JS files.
 
-By doing this I was able to reduce the loading time by 2 seconds and make the content appear 1 second earlier.
+By doing this I was able to reduce the loading time by half a second and make the content appear half a second earlier as well.
 
-You can find the changes in the [minify](../minify/AUDIT.md) branch.
+You can find the changes in the [minify](../minify/AUDIT.md) branch. These are the new stats:
 
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
@@ -61,9 +61,9 @@ You can find the changes in the [minify](../minify/AUDIT.md) branch.
 ### 3. Compressing image files
 ---
 
-By compressing the image files I was able to make the biggest change in loading speed. The overall speed got reduced by 7 seconds. To compress the image files I used [TinyPNG](https://tinypng.com/).
+By compressing the image files I was able to make some small changes in loading speed. The overall speed got reduced by 0.010 seconds. To compress the image files I used [TinyPNG](https://tinypng.com/).
 
-You can find the changes in the [compress-images](../compress-images/AUDIT.md) branch.
+You can find the changes in the [compress-images](../compress-images/AUDIT.md) branch. These are the new stats:
 
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
@@ -79,6 +79,8 @@ You can find the changes in the [compress-images](../compress-images/AUDIT.md) b
 ### Merging everything together
 ---
 
+<!-- !! ADD INFO !! -->
+
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
 | 2.060 seconds          | 6.460 seconds      | 79/100 |
@@ -89,3 +91,7 @@ You can find the changes in the [compress-images](../compress-images/AUDIT.md) b
 
 **Audit after all changes:**
 ![Audit after all changes](screenshots/audit-after-all-changes.png)
+
+## Conclusion
+
+<!-- !! ADD CONCLUSION !! -->
