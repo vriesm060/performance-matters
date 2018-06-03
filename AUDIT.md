@@ -1,6 +1,6 @@
 # Bootstrap Documentation Site Performance
 
-<!-- !! ADD INTRO !! -->
+I have done performance improvements for the Bootstrap Documentation website to make the website respond faster and perform better.
 
 ## Setup
 
@@ -9,6 +9,17 @@ All the audits where done on a Fast 3G internet connection, which was good enoug
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
 | 5.420 seconds          | 5.420 seconds      | 64/100 |
+
+### Settings
+---
+
+* **Browser used:** Google Chrome
+* **Google Chrome Dev tools settings:**
+  * Disable cache
+  * Throttle: 3G Fast
+* **Google Chrome Dev tools used:**
+  * Network tab
+  * Audits
 
 **Original waterfall:**
 ![Original](screenshots/original.png)
@@ -76,10 +87,9 @@ You can find the changes in the [compress-images](../compress-images/AUDIT.md) b
 **Audit after compressing images:**
 ![Audit after compressing images](screenshots/audit-after-compress-images.png)
 
-### Merging everything together
----
+## Conclusion
 
-<!-- !! ADD INFO !! -->
+After merging all the improvements listed above with the master branch, I tested the website once again to see the final results. These are the final stats:
 
 | First meaningful paint | First interactive  | Score  |
 | ---------------------- | ------------------ | ------ |
@@ -92,6 +102,4 @@ You can find the changes in the [compress-images](../compress-images/AUDIT.md) b
 **Audit after all changes:**
 ![Audit after all changes](screenshots/audit-after-all-changes.png)
 
-## Conclusion
-
-<!-- !! ADD CONCLUSION !! -->
+So, by taking a few basic steps towards improving the performance, you can come a long way. These are just a few improvements you can make. These improvements already reduce about 3 seconds of loading time, making the website load and respond a lot faster than before the changes.
