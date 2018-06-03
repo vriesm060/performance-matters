@@ -19,7 +19,7 @@ By loading all the scripts asynchronous they load at the same time and don't hav
 
 By also loading the fonts.css file asynchronous, the content is shown even sooner. It now shows the content 5 seconds earlier than in the original way.
 
-You can find the changes in the [async-loading](/blob/async-loading/AUDIT.md) branch.
+You can find the changes in the [async-loading](../async-loading/AUDIT.md) branch.
 
 <!--
 | First meaningful paint | First interactive  | Score  |
